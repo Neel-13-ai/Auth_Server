@@ -20,9 +20,9 @@ app.use(
   })
 );
 
-app.use("/", (req, res) => {
-  res.send("Welcome, Home!!");
-});
+// app.use("/", (req, res) => {
+//   res.json("Welcome, Home!!");
+// });
 app.use("/api/auth", authRoute);
 app.use("/api/form", contactRoute);
 app.use("/api/data", serviceRoute);
